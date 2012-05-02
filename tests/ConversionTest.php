@@ -1,4 +1,9 @@
 <?php
+/**
+ * Unit tests covering Coordinate conversion methods
+ *
+ * @author Gilmar Pupo <g@g1mr.com>
+ */
 namespace Gpupo\Coordinate\Tests;
 
 use Gpupo\Coordinate\Conversion;
@@ -16,7 +21,6 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(8,
             count($conversion->getDMS())
         );
-
    }
 
     /**
@@ -28,9 +32,7 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
         $dec = $conversion->dmsToDec($dms);
         $this->assertEquals($lat,$dec['lat']);
         $this->assertEquals($lng, $dec['lng']);
-
     }
-
 
     public function dataProviderDMS()
     {

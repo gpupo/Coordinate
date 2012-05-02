@@ -1,6 +1,9 @@
 <?php
-
-//http://en.wikipedia.org/wiki/Geographic_coordinate_conversion
+/**
+ * Coordinate conversion lib
+ *
+ * @author Gilmar Pupo <g@g1mr.com>
+ */
 namespace Gpupo\Coordinate;
 
 class Conversion {
