@@ -1,6 +1,5 @@
 <?php
 
-//http://en.wikipedia.org/wiki/Geographic_coordinate_conversion
 namespace Gpupo\Coordinate;
 
 class Conversion {
