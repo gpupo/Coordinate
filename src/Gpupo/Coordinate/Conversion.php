@@ -4,6 +4,7 @@
  *
  * @author Gilmar Pupo <g@g1mr.com>
  */
+
 namespace Gpupo\Coordinate;
 
 class Conversion {
