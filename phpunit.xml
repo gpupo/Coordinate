@@ -1,0 +1,16 @@
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="Tests/bootstrap.php"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         verbose="false"
+         testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader">
+    <filter>
+    </filter>
+
+</phpunit>
