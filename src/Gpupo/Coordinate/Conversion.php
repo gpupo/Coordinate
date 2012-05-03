@@ -1,6 +1,6 @@
 <?php
 /**
- * Coordinate conversion lib
+ * Geografic Coordinate conversion lib
  *
  * @author Gilmar Pupo <g@g1mr.com>
  */
@@ -25,10 +25,10 @@ class Conversion {
         return implode("\n", $this->log);
     }
 
-
     protected $rules = array(
-        'positives' => array('E', 'N'),
-        'negatives' => array('W', 'S'),
+        'decimalSeparator' => ',',
+        'positives'        => array('E', 'N'),
+        'negatives'        => array('W', 'S'),
     );
 
     protected $dms = array();
@@ -36,6 +36,14 @@ class Conversion {
     public function getDMS()
     {
         return $this->dms;
+    }
+
+    /**
+     * Set decimal separator on decimal coordenates
+     */
+    public function setDecimalSeparator($separator)
+    {
+        $this->rules['decimalSeparator'] = $separator;
     }
 
     public function dmsToDec($dms)
@@ -67,7 +75,7 @@ class Conversion {
     {
         if (
             in_array(
-                $direction,
+                strtoupper($direction),
                 $this->rules['negatives']
             )
         ) {
@@ -99,15 +107,22 @@ class Conversion {
         return number_format(
             $c * $this->getDirectionSignal($direction),
             6,
-            ',',
+            $this->rules['decimalSeparator'],
             ''
         );
     }
 
+    /**
+     * Clean input DMS and set as array.
+     */
     public function setDMS($string)
     {
 
-        $string = preg_replace('/\x{00B0}/u',' ', $string);
+        $string = preg_replace(
+            "/[^a-zA-Z0-9,.\s]/",
+            ' ',
+            trim($string)
+        );
 
         $string = str_replace(
             array('S', 'N', 'E', 'W'),
@@ -115,20 +130,13 @@ class Conversion {
             strtoupper($string)
         );
 
-        $this->dms = explode(
+        $string = preg_replace(
+            '/\s+/',
             ' ',
-            str_replace(
-                '  ',
-                ' ',
-                str_replace(
-                    array('\'','"',chr(176)),
-                    array(' '),
-                    trim($string)
-                )
-            )
+            $string
         );
-        $this->logger('## DMS data');
-        $this->logger($this->dms);
+
+        $this->dms = explode(' ',$string);
     }
 
 }
