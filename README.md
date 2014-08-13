@@ -27,6 +27,18 @@ echo $dec['lng'];// output: -87,833611
 
 ```
 
+## Install
+
+The recommended way to install is [through composer](http://getcomposer.org).
+
+```JSON
+{
+    "require": {
+        "gpupo/coordinate": "dev-master"
+    }
+}
+```
+
 ## Todo
 
 - [ ] Convert a Decimal format into DMS
