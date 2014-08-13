@@ -2,7 +2,7 @@
 
 See [Geographic coordinate conversion](http://en.wikipedia.org/wiki/Geographic_coordinate_conversion)
 
-[![Build Status](https://secure.travis-ci.org/gpupo/coordinate.png?branch=master)](http://travis-ci.org/gpupo/coordinate)
+[![Build Status](https://secure.travis-ci.org/gpupo/Coordinate.png?branch=master)](http://travis-ci.org/gpupo/Coordinate)
 
 ## Features
 
