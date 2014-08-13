@@ -4,7 +4,7 @@
  *
  * @author Gilmar Pupo <g@g1mr.com>
  */
-namespace Gpupo\Coordinate\Tests;
+namespace Gpupo\Tests\Coordinate;
 
 use Gpupo\Coordinate\Conversion;
 
@@ -34,7 +34,6 @@ class ConversionTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($lng, $dec['lng']);
     }
 
-    
     /**
      * @dataProvider dataProviderDMS
      */

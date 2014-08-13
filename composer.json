@@ -1,0 +1,20 @@
+{
+    "name": "gpupo/coordinate",
+    "description": "Geographic coordinate conversion",
+    "keywords": ["DMS", "Degrees", "coordinate", "decimal", "longitude", "latitude"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-0": { "Gpupo\\Coordinate": "src" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

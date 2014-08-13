@@ -7,8 +7,8 @@
 
 namespace Gpupo\Coordinate;
 
-class Conversion {
-
+class Conversion
+{
     protected $log = array();
 
     protected function logger($line)
