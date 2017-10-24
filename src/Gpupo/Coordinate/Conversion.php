@@ -2,7 +2,7 @@
 /**
  * Geografic Coordinate conversion lib
  *
- * @author Gilmar Pupo <g@g1mr.com>
+ * @author Gilmar Pupo <contact@gpupo.com>
  */
 
 namespace Gpupo\Coordinate;

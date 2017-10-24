@@ -2,7 +2,7 @@
 /**
  * Unit tests covering Coordinate conversion methods
  *
- * @author Gilmar Pupo <g@g1mr.com>
+ * @author Gilmar Pupo <contact@gpupo.com>
  */
 namespace Gpupo\Tests\Coordinate;
 
