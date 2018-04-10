@@ -7,8 +7,9 @@
 namespace Gpupo\Tests\Coordinate;
 
 use Gpupo\Coordinate\Conversion;
+use PHPUnit\Framework\TestCase as TestCaseCore;
 
-class ConversionTest extends \PHPUnit_Framework_TestCase
+class ConversionTest extends TestCaseCore
 {
 
     /**
